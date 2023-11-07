@@ -42,7 +42,7 @@ def create_character():
 def get_characters():
     characters = FriendsCharacter.query.all()
     character_list = [format_character(character) for character in characters]
-    return jsonify(Characters=character_list)
+    return jsonify(characters=character_list)
     
     # for character in characters:
     #     character_list.append(format_character(character))
